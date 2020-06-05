@@ -45,6 +45,11 @@ void setup() {
  objects = new ArrayList<GameObject>();
  myPlayer = new Player();
  objects.add(myPlayer);
+ int i = 0;
+ while (i < 60) {
+   objects.add(new Obstacle());
+   i++;
+ }
 }
 
 //##################################### DRAW #############################################
